@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+ <!-- <label for="titulo-evento">Título do Evento</label>
+  <input type="text" name="titulo-evento" id="titulo-evento" />
+
+<br/>
+
+  <input type="password" name="" id="">
+<br/>
+  <input type="number" name="" id="">
+<br/>
+  <input type="checkbox" name="" id="">
+<br/>
+  <select name="" id="">
+    <option value="music">Música</option>
+    <option value="movie">Filme</option>
+  </select>
+<br/>
+  <textarea name="" id=""></textarea> -->
+
+
+<form action="" method="">
+
+</form>
+
+</body>
+</html>
