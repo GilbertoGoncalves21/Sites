@@ -1,0 +1,3 @@
+This project I experiment the screen's adaptation according with the device.
+
+I recommend adapt the width and height of the screen with dev tool on browser.
