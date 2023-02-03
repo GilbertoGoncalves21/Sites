@@ -1,0 +1,807 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --ff-mont: 'Montserrat', sans-serif;
+  --ff-play: 'Playfair Display', serif;
+}
+
+/* Primeira parte do Home*/
+
+
+body{
+  max-width: 36rem;
+  margin: 0 auto;
+}
+.home{
+  width: 36rem;
+  height: 64rem;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/home.svg) no-repeat;
+  background-size: 36rem 64rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+
+}
+
+.home-text{
+  margin-top: 24.3rem;
+}
+
+.home h2{
+  font-family: var(--ff-mont);
+  font-weight: 500;
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #ffffff;
+  margin: 24.3rem auto 0;
+  text-align: center;
+}
+
+.home h1{
+  font-family: var(--ff-play);
+  font-weight: 600;
+  line-height:7.1rem;
+  font-size: 5.3rem;
+  color: #ffffff;
+}
+
+.home-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+.home-button button:nth-child(1) {
+  width: 16rem;
+  height: 4.9rem;
+
+  background: #7a7266;
+
+  border: none;
+
+}
+
+.home-button button:nth-child(2) {
+  width: 16rem;
+  height: 4.9rem;
+
+  background: #5A493E;
+
+  border: none;
+}
+
+.home-button button a{
+  text-decoration: none;
+}
+
+.home-button button a span{
+  font-family: var(--ff-mont);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #ffffff;
+}
+
+/* Barra de Navegação do Site */
+
+.menu{
+  margin-top: 18rem;;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem 3.2rem;
+  gap: 4rem;
+
+  position: relative;
+
+  height: 7rem;
+  width: 36rem;
+
+  background: #2a2a2a;
+}
+
+.menu img:nth-child(1){
+  width: 8.3rem;
+  height: 3.44rem;
+}
+
+.menu-button{
+  background: #7a7266;
+  width: 10.5rem;
+  height: 4.5rem;
+  padding: 1.2rem 2.4rem;
+}
+
+.menu-button a{
+  text-decoration: none;
+}
+
+.menu-button a span{
+  font-family: var(--ff-mont);
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+@media(max-width:750px){
+  
+}
+
+.menu-bar{
+  width: 3rem;
+  height: 2.1rem;
+}
+.menu-bar:hover{
+  cursor: pointer;
+}
+
+.menu-list{
+  display: none;
+}
+.menu-list li {
+    list-style: none;
+}
+.menu-list li a{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Nossas Suítes */
+
+.suite{
+  width: 36rem;
+  height: 81.4rem;
+  padding-top: 6rem;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+
+  background: #7A7266;
+}
+
+.suite h1{
+  font-family: var(--ff-play);
+  font-weight: 600;
+  font-size: 3.4rem;
+  list-style: 4.5rem;
+  color: #ffffff;
+
+  margin-bottom: 3.2rem;
+}
+
+.slider{
+  display: flex;
+  gap: 8px;
+
+  position: relative;
+
+  width: 31.2rem;
+  height: 44rem;
+
+}
+
+.slider img{
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+
+}
+
+
+
+.next-page{
+  position: absolute;
+  width: 4rem;
+  height: 6.2rem;
+  
+  background: rgba(255, 255, 255, 0.5);
+
+  
+  top: 18.9rem;
+  right: 0;
+  
+}
+
+.previous-page{
+  position: absolute;
+  width: 4rem;
+  height: 6.2rem;
+  
+  background: rgba(255, 255, 255, 0.5);
+
+  top: 18.9rem;
+  left: 0; 
+}
+
+.box-preco{
+  position: absolute;
+  width: 28rem;
+  height: 19.5rem;
+  top: 48.7rem;
+  padding: 3.2rem;
+
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.box-preco h2{
+  font-family: var(--ff-play);
+  font-size: 2.2rem;
+  font-weight: 600;
+  line-height: 2.9rem;
+  color: #2a2a2a;
+  
+  margin-bottom: 8px;
+}
+
+.box-preco p{
+  font-family: var(--ff-mont);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 150%;
+  color: #2a2a2a;
+}
+
+.button-about button{
+  width: 12.5rem;
+  height: 4.9rem;
+  padding: 1.6rem 2.4rem;
+
+  background: #5a493e;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  white-space: nowrap;
+}
+
+.button-about button a{
+  font-family: var(--ff-mont);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #ffffff;
+
+  text-decoration: none;
+  width: 7.7rem;
+}
+
+.more-opt{
+  position: absolute;
+
+  top: 71.7rem;
+}
+
+.more-opt a{
+  font-family: var(--ff-mont);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #ffffff;
+}
+
+
+/* O Motel */
+
+.sobre{
+  position: relative;
+  width: 36rem;
+  height: 105.6rem;
+  background: #EEEEEE;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sobre .img img{
+  position: absolute;
+  top: -0.6rem;
+  left: 0;
+  width: 100%;
+  height: 31.2rem;
+}
+
+.sobre .o-motel{
+  position: absolute;
+  top: 27.6rem;
+
+  width: 31.2rem;
+  height: 69.6rem;
+
+  background: #ffffff;
+
+  padding: 7.2rem 3.2rem;
+}
+
+.sobre .o-motel h1{
+  font-family: var(--ff-play);
+  font-weight: 600;
+  font-size: 3.4rem;
+  line-height: 4.5rem;
+  color: #2a2a2a;
+  margin-bottom: 1.6rem;
+}
+
+.sobre .o-motel p{
+  font-family: var(--ff-mont);
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+.sobre button{
+  width: 12.5rem;
+  height: 4.9rem;
+
+  padding: 1.6rem 2.4rem;
+
+  background: #5A493E;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  white-space: nowrap;
+}
+
+.sobre button a{
+  text-decoration: none;
+
+  font-family: var(--ff-mont);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #fff;
+}
+
+/* Cortesias */
+
+.cortesia{
+  width: 36rem;
+  height: 150rem;
+
+  padding: 6.4rem 2.4rem;
+
+  background: #6c6359;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+
+.cortesia h1{
+  font-family: var(--ff-play);
+  font-weight: 600;
+  font-size: 3.4rem;
+  line-height: 4.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.contesia-device{
+  width: 31.2rem;
+  height: 121.4rem;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.cafe-manha{
+  top: 3.2rem;
+
+  width: 100%;
+  height: 33.7rem;
+
+  background: #ffffff;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: relative;
+}
+
+.cafe-manha img{
+  width: 100%;
+  height: 20.4rem;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+
+.cafe-manha .cafe-img p{
+  font-family: var(--ff-mont);
+  font-weight: 600;
+  font-size: 9px;
+  line-height: 150%;
+
+  bottom: 13.7rem;
+  left: 0.8rem;
+
+  position: absolute;
+}
+
+.cafe-txt{
+  position: absolute;
+  width: 100%;
+  height: 22.4rem;
+
+  top: 23.2rem;
+  bottom: 0;
+
+  text-align: center;
+}
+
+.cafe-txt h2{
+  font-family: var(--ff-play);
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 2.9rem;
+  color: #2a2a2a;  
+}
+
+.cafe-txt p{
+  font-family: var(--ff-mont);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 160%;
+  color: #2a2a2a;
+}
+
+.aniversario{
+  top: 4.6rem;
+
+  width: 31.2rem;
+  height: 42.8rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  position: relative;
+
+  background: #ffffff;
+}
+
+.niver-img img{
+  width: 31.2rem;
+  height: 22.4rem;
+  left: 0;
+  top: 0;
+  position: absolute;
+}
+
+.niver-text{
+  position: absolute;
+
+  top: 28rem;
+
+  align-items: center;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.niver-text h2{
+  font-family: var(--ff-play);
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 2.9rem;
+  color: #2a2a2a;
+  overflow-wrap: break-word;
+  width: 24.8rem;
+}
+
+.niver-text p{
+  font-family: var(--ff-mont);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 160%;
+  color: #2a2a2a;
+}
+
+.desconto{
+  width: 31.2rem;
+  height: 37.7rem;
+
+  background: #ffffff;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+  top: 6rem;
+}
+
+.desconto img{
+  width: 100%;
+  height: 22.4rem;
+
+  left: 0;
+  top: 0;
+
+  position: absolute;
+
+}
+
+.desconto .desconto-text{
+  position: absolute;
+  top: 27.5rem;
+  left: 2.5rem;
+}
+
+.desconto-text h2{
+  font-family: var(--ff-play);
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 2.9rem;
+  color: #2a2a2a;
+}
+
+.desconto-text p{
+  font-family: var(--ff-mont);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 160%;
+  color: #2a2a2a;
+}
+
+.cortesia button{
+  top: 138.7rem;
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.6rem 2.4rem;
+  width: 20.1rem;
+  height: 4.9rem;
+
+  background-color: #2a2a2a;
+}
+
+.cortesia button a{
+  text-decoration: none;
+  color: #ffffff;
+
+  font-family: var(--ff-mont);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+
+  width: 15.3rem;
+
+  white-space: nowrap;
+}
+
+/* Localização */
+
+.local{
+  width: 36rem;
+  height: 67.4rem;
+  padding: 6.4rem 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #EEEEEE;
+}
+
+.local-page{
+  position: relative;
+
+  width: 31.2rem;
+  height: 54.6rem;
+
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+
+  background: #ffffff;
+}
+
+.local-map iframe{
+  width: 31.2rem;
+  height: 31.2rem;
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+}
+
+.local-text{
+  position: absolute;
+  top: 34rem;
+
+  text-align: center;
+}
+
+.local-text h2{
+  font-family: var(--ff-play);
+  font-weight: 600;
+  font-size: 2.2rem;
+  line-height: 2.9rem;
+  color: #2a2a2a;
+}
+
+
+.local-text p{
+  font-family: var(--ff-mont);
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 160%;
+  color: #2a2a2a;
+
+  overflow-wrap: break-word;
+}
+
+.local button{
+  display: flex;
+  flex-direction: center;
+  align-items: center;
+
+  margin: 2.2rem auto 0;
+  padding: 1.6rem 2.4rem;
+
+  width: 12.5rem;
+  height: 4.9rem;
+
+  background: #5A493E;
+}
+
+.local button a{
+  text-decoration: none;
+  font-family: var(--ff-mont);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  color: #ffffff;
+
+  white-space: nowrap;
+
+}
+
+/* Contato */
+
+.contato{
+  position: relative;
+
+  width: 36rem;
+  height:51.13rem;
+
+  background-color: #2a2a2a;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.8rem 3.2rem;
+}
+
+.contato-logo img{
+  position: absolute;
+
+  top: 4.8rem;
+  left: 8.55rem;
+
+  width: 18.9rem;
+  height: 7.83rem;
+
+}
+
+.contato .traco{
+  position: absolute;
+  top: 15.83rem;
+  height: 0.1rem;
+  width: 29.6rem;
+  left: 3.2rem;
+  background: #d9d9d9;
+}
+
+.contato-option{
+  position: absolute;
+
+  top: 19.13rem;
+  left: 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+
+  width: 29.6rem;
+  height: 5.3rem;
+}
+
+.contato-option button a{
+  text-decoration: none;
+
+  font-family: var(--ff-mont);
+  font-weight: 500;
+  font-size: 1.4rem;
+  line-height: 150%;
+  text-align: center;
+  color: #ffffff;
+  background: none;
+}
+
+.contato-option .reserva, .contato-option .cont-suite{
+  display: flex;
+  align-items: flex-start;
+  padding: 1.6rem 3.2rem;
+
+  width: 29.6rem;
+  height: 5.3rem;
+
+  background: #7A7266;
+}
+
+.contato-option .whatsapp, .contato-option .contact{
+  display: flex;
+  align-items: flex-start;
+  padding: 1.6rem 3.2rem;
+
+  width: 29.6rem;
+  height: 5.3rem;
+
+  border: 1.5px solid #ffffff;
+  background: #2a2a2a;
+}
+
+/* Rodapé */
+
+footer{
+  width: 36rem;
+  height: 10.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1.2rem 1.6rem 8.2rem;
+
+  background: #000000;
+}
+
+footer p{
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 120%;
+  color: #ffffff;
+
+  text-transform: uppercase;
+  text-align: center;
+}
